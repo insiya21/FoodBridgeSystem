@@ -1,0 +1,344 @@
+/* ===========================
+        LOGIN PAGE
+=========================== */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    background: #f8f9ff;
+}
+
+
+/* ===========================
+        LEFT SIDE
+=========================== */
+
+.login-left {
+    flex: 1;
+    background: linear-gradient(135deg, #6c63ff 0% , #7c6cff 50% , #8b5cf6 100%);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+
+    padding: 60px; 
+    text-align: center;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.login-logo {
+    width: 100px;
+    padding: 18px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+}
+
+.login-left h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.login-left p {
+    max-width: 420px;
+    line-height: 1.8;
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+.login-features {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* ===========================
+        RIGHT SIDE
+=========================== */
+
+.login-right {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.login-card {
+
+    width: 100%;
+    max-width: 500px;
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+
+}
+
+.login-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+
+.login-card h2 {
+
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 8px;
+    color: #1f2937;
+
+}
+
+.subtitle {
+
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 35px;
+
+}
+
+
+/* ===========================
+        INPUTS
+=========================== */
+
+.input-group {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+
+}
+
+.input-group label {
+
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #374151;
+
+}
+
+.input-group input {
+
+    padding: 15px 18px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+}
+
+.input-group input:focus {
+
+    border-color: #6c63ff;
+
+    box-shadow: 0 0 0 4px rgba(108,99,255,.12);
+
+}
+
+
+/* ===========================
+        BUTTONS
+=========================== */
+
+.login-submit {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #6c63ff;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.login-submit:hover {
+
+    background: #5848f5;
+
+    transform: translateY(-2px);
+
+}
+
+
+.divider {
+
+    text-align: center;
+
+    margin: 30px 0;
+
+    color: #9ca3af;
+
+    position: relative;
+
+}
+
+.divider span {
+
+    background: white;
+
+    padding: 0 14px;
+
+}
+
+.divider::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 1px;
+
+    background: #e5e7eb;
+
+    z-index: -1;
+
+}
+
+
+.register-switch {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    border: 2px solid #6c63ff;
+
+    background: white;
+
+    color: #6c63ff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.register-switch:hover {
+
+    background: #6c63ff;
+
+    color: white;
+
+}
+
+
+.back-home {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+}
+
+.back-home button {
+
+    background: none;
+
+    border: none;
+
+    color: #6c63ff;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+.back-home button:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+
+    .login-page {
+
+        flex-direction: column;
+
+    }
+
+    .login-left {
+
+        padding: 50px 30px;
+
+    }
+
+    .login-left h1 {
+
+        font-size: 34px;
+
+    }
+
+    .login-right {
+
+        padding: 30px;
+
+    }
+
+}

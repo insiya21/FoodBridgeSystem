@@ -1,0 +1,347 @@
+/* ===========================
+        REGISTER PAGE
+=========================== */
+
+.register-page {
+    min-height: 100vh;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    background: #f8f9ff;
+}
+
+
+/* ===========================
+        LEFT SIDE
+=========================== */
+
+.register-left {
+    flex: 1;
+    background: linear-gradient(135deg, #6c63ff, #8b5cf6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    padding: 60px;
+}
+
+.register-logo {
+    width: 100px;
+    padding: 18px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.register-left h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.register-left p {
+    max-width: 450px;
+    line-height: 1.8;
+    font-size: 18px;
+    opacity: 0.95;
+    margin-bottom: 25px;
+}
+
+.register-features {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+}
+
+
+/* ===========================
+        RIGHT SIDE
+=========================== */
+
+.register-right {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.register-card {
+
+    width: 100%;
+    max-width: 500px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+
+    transition: .3s;
+
+}
+
+.register-card:hover{
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 20px 50px rgba(0,0,0,.12);
+
+}
+
+.register-card h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:8px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#6b7280;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ===========================
+        INPUTS
+=========================== */
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:18px;
+
+}
+
+.input-group label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.input-group input,
+.input-group select{
+
+    padding:14px 16px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus,
+.input-group select:focus{
+
+    border-color:#6c63ff;
+
+    box-shadow:0 0 0 4px rgba(108,99,255,.12);
+
+}
+
+
+/* ===========================
+        BUTTONS
+=========================== */
+
+.register-submit{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#6c63ff;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.register-submit:hover{
+
+    background:#5848f5;
+
+    transform:translateY(-2px);
+
+}
+
+
+.divider{
+
+    text-align:center;
+
+    margin:25px 0;
+
+    position:relative;
+
+    color:#9ca3af;
+
+}
+
+.divider span{
+
+    background:white;
+
+    padding:0 12px;
+
+}
+
+.divider::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    left:0;
+
+    width:100%;
+
+    height:1px;
+
+    background:#e5e7eb;
+
+    z-index:-1;
+
+}
+
+
+.login-switch{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:2px solid #6c63ff;
+
+    background:white;
+
+    color:#6c63ff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-switch:hover{
+
+    background:#6c63ff;
+
+    color:white;
+
+}
+
+
+.back-home{
+
+    text-align:center;
+
+    margin-top:22px;
+
+}
+
+.back-home button{
+
+    border:none;
+
+    background:none;
+
+    color:#6c63ff;
+
+    cursor:pointer;
+
+}
+
+.back-home button:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .register-page{
+
+        flex-direction:column;
+
+    }
+
+    .register-left{
+        flex:1;
+        background: linear-gradient(135deg, #6c63ff, #8b5cf6);
+        padding:40px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .register-right{
+
+        padding:25px;
+
+    }
+
+    .register-card{
+
+        max-width:100%;
+
+    }
+
+}

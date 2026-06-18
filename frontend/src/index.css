@@ -1,0 +1,129 @@
+/* ===========================
+   GLOBAL RESET
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================
+   ROOT
+=========================== */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #111827;
+  font-weight: 700;
+  margin: 0;
+}
+
+th {
+  color: white !important;
+}
+
+/* ===========================
+   PARAGRAPHS
+=========================== */
+
+p {
+  color: #6b7280;
+  margin: 0;
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  outline: none;
+}
+
+/* ===========================
+   TABLES
+=========================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* ===========================
+   IMAGES
+=========================== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6c63ff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #574bff;
+}

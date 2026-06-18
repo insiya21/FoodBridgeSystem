@@ -1,0 +1,126 @@
+/* Background */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f8fafc;
+  font-family: Inter, Arial, sans-serif;
+  color: #1f2937;
+}
+
+/* Layout */
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background: #f8fafc;
+}
+
+/* Cards */
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Buttons */
+
+.primary-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #4f46e5;
+}
+
+.secondary-btn {
+  background: #e5e7eb;
+  color: #111827;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Inputs */
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #6366f1;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+th {
+  background: #f3f4f6;
+  padding: 15px;
+}
+
+td {
+  padding: 15px;
+}
+
+tr:hover {
+  background: #f9fafb;
+}
+
+/* Status */
+
+.status-green {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.status-orange {
+  color: #ea580c;
+  font-weight: bold;
+}
+
+.status-blue {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.status-purple {
+  color: #7c3aed;
+  font-weight: bold;
+}
