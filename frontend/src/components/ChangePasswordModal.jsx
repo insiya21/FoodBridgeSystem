@@ -30,8 +30,7 @@ function ChangePasswordModal({
     try {
 
       await axios.post(
-        "http://localhost:8080/api/users/change-password",
-        {
+"https://foodbridgesystem.onrender.com/api/users/change-password",        {
           userId: Number(
             localStorage.getItem("id")
           ),

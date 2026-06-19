@@ -15,7 +15,7 @@ function VolunteerDashboard() {
   const fetchMyAssignments = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8080/api/donations/volunteer/${encodeURIComponent(
+        `https://foodbridgesystem.onrender.com/api/donations/volunteer/${encodeURIComponent(
           volunteerName
         )}`
       );
@@ -30,7 +30,7 @@ function VolunteerDashboard() {
   const markDelivered = async (id) => {
     try {
       await axios.put(
-        `http://localhost:8080/api/donations/deliver/${id}`
+        `https://foodbridgesystem.onrender.com/api/donations/deliver/${id}`
       );
 
       toast.success("Donation Delivered Successfully");

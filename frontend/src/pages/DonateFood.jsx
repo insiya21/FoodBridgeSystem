@@ -39,7 +39,7 @@ function DonateFood({ setPage }) {
     setUploading(true);
 
     const response = await axios.post(
-      "http://localhost:8080/api/upload",
+      "https://foodbridgesystem.onrender.com/api/upload",
       formData,
       {
         headers: {
@@ -86,7 +86,7 @@ function DonateFood({ setPage }) {
     try {
 
       await axios.post(
-        "http://localhost:8080/api/donations",
+        "https://foodbridgesystem.onrender.com/api/donations",
         donation
       );
 

@@ -16,7 +16,7 @@
     const fetchDonations = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/donations"
+          "https://foodbridgesystem.onrender.com/api/donations"
         );
 
         setDonations(response.data);
@@ -29,7 +29,7 @@
     const claimFood = async (id) => {
       try {
         await axios.put(
-          `http://localhost:8080/api/donations/claim/${id}`,
+          `https://foodbridgesystem.onrender.com/api/donations/claim/${id}`,
           {},
           {
             params: {

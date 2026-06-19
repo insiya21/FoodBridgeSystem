@@ -28,7 +28,7 @@ function Login({ setShowLogin, setShowRegister }) {
     try {
 
       await axios.post(
-        `http://localhost:8080/api/auth/forgot-password?email=${email}`
+        `https://foodbridgesystem.onrender.com/api/auth/forgot-password?email=${email}`
       );
 
       toast.success(
@@ -52,7 +52,7 @@ function Login({ setShowLogin, setShowRegister }) {
     try {
 
       await axios.post(
-        `http://localhost:8080/api/auth/reset-password?email=${email}&otp=${otp}&newPassword=${newPassword}`
+        `https://foodbridgesystem.onrender.com/api/auth/reset-password?email=${email}&otp=${otp}&newPassword=${newPassword}`
       );
 
       toast.success(
@@ -82,7 +82,7 @@ function Login({ setShowLogin, setShowRegister }) {
     try {
 
       const response = await axios.post(
-        "http://localhost:8080/api/auth/login",
+        "https://foodbridgesystem.onrender.com/api/auth/login",
         {
           email: email,
           password: password,

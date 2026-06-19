@@ -18,7 +18,7 @@ function MyClaimedDonations() {
     try {
 
       const response = await axios.get(
-        `http://localhost:8080/api/donations/claimed/${encodeURIComponent(ngoName)}`
+        `https://foodbridgesystem.onrender.com/api/donations/claimed/${encodeURIComponent(ngoName)}`
       );
 
       setDonations(response.data);

@@ -23,7 +23,7 @@ import axios from "axios";
 const fetchStats = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:8080/api/donations/stats"
+      "https://foodbridgesystem.onrender.com/api/donations/stats"
     );
 
     setStats(response.data);
@@ -35,7 +35,7 @@ const fetchStats = async () => {
 const fetchRecentDonations = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:8080/api/donations/recent"
+      "https://foodbridgesystem.onrender.com/api/donations/recent"
     );
 
     setRecentDonations(response.data);

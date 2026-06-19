@@ -14,7 +14,7 @@ function EditDonation({ donation, onClose, refresh }) {
   const updateDonation = async () => {
     try {
       await axios.put(
-        `http://localhost:8080/api/donations/${donation.id}`,
+        `https://foodbridgesystem.onrender.com/api/donations/${donation.id}`,
         {
           foodName,
           quantity,

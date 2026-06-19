@@ -13,7 +13,7 @@ function ManageUsers() {
   const fetchUsers = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/users"
+        "https://foodbridgesystem.onrender.com/api/users"
       );
 
       setUsers(response.data);
@@ -32,7 +32,7 @@ function ManageUsers() {
 
     try {
       await axios.delete(
-        `http://localhost:8080/api/users/${id}`
+        `https://foodbridgesystem.onrender.com/api/users/${id}`
       );
 
       toast.success("User Deleted Successfully!");

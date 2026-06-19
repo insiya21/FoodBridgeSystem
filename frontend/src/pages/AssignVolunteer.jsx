@@ -15,7 +15,7 @@ function AssignVolunteer() {
   const fetchClaimedDonations = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/donations"
+        "https://foodbridgesystem.onrender.com/api/donations"
       );
 
       const claimedDonations = response.data.filter(
@@ -32,7 +32,7 @@ function AssignVolunteer() {
   const fetchVolunteers = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/users/volunteers"
+        "https://foodbridgesystem.onrender.com/api/users/volunteers"
       );
 
       setVolunteerList(response.data || []);
@@ -59,7 +59,7 @@ function AssignVolunteer() {
 
     try {
       await axios.put(
-        `http://localhost:8080/api/donations/assign/${id}`,
+        `https://foodbridgesystem.onrender.com/api/donations/assign/${id}`,
         {},
         {
           params: {

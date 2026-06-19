@@ -17,7 +17,7 @@ const [previewImage, setPreviewImage] = useState(null);
     try {
       // If you have /donor/{name} endpoint, use this:
       const response = await axios.get(
-        `http://localhost:8080/api/donations/donor/${encodeURIComponent(
+        `https://foodbridgesystem.onrender.com/api/donations/donor/${encodeURIComponent(
           donorName
         )}`
       );
@@ -29,7 +29,7 @@ const [previewImage, setPreviewImage] = useState(null);
 
       /*
       const response = await axios.get(
-        "http://localhost:8080/api/donations"
+        "https://foodbridgesystem.onrender.com/api/donations"
       );
 
       const myData = response.data.filter(
@@ -56,7 +56,7 @@ const [previewImage, setPreviewImage] = useState(null);
     try {
 
       await axios.delete(
-        `http://localhost:8080/api/donations/${id}`
+        `https://foodbridgesystem.onrender.com/api/donations/${id}`
       );
 
       toast.success("Donation deleted successfully");

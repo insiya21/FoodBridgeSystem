@@ -20,8 +20,7 @@ function EditProfileModal({
       const id = localStorage.getItem("id");
 
       await axios.put(
-  `http://localhost:8080/api/users/${id}`,
-  {
+`https://foodbridgesystem.onrender.com/api/users/${id}`,  {
     name,
     email,
     phoneNumber,

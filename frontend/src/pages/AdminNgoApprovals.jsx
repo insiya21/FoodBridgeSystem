@@ -15,8 +15,7 @@ function AdminNgoApprovals() {
     try {
 
       const response = await axios.get(
-        "http://localhost:8080/api/admin/pending-ngos"
-      );
+"https://foodbridgesystem.onrender.com/api/admin/pending-ngos"      );
 
       setNgos(response.data);
 
@@ -33,7 +32,7 @@ function AdminNgoApprovals() {
     try {
 
       await axios.put(
-        `http://localhost:8080/api/admin/approve/${id}`
+        `https://foodbridgesystem.onrender.com/api/admin/approve/${id}`
       );
 
       toast.success("NGO Approved");
@@ -52,7 +51,7 @@ function AdminNgoApprovals() {
     try {
 
       await axios.put(
-        `http://localhost:8080/api/admin/reject/${id}`
+        `https://foodbridgesystem.onrender.com/api/admin/reject/${id}`
       );
 
       toast.success("NGO Rejected");

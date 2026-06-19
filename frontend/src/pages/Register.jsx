@@ -30,7 +30,7 @@ function Register({ setShowRegister, setShowLogin }) {
     }
 
     try {
-      await axios.post("http://localhost:8080/api/auth/register", {
+      await axios.post("https://foodbridgesystem.onrender.com/api/auth/register", {
         name: formData.name,
         email: formData.email,
         password: formData.password,

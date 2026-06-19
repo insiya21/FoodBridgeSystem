@@ -15,8 +15,7 @@ function Analytics() {
   const fetchUsers = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/users"
-      );
+"https://foodbridgesystem.onrender.com/api/users"      );
 
       setUsers(response.data);
     } catch (error) {
@@ -27,7 +26,7 @@ function Analytics() {
   const fetchDonations = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/donations"
+        "https://foodbridgesystem.onrender.com/api/donations"
       );
 
       setDonations(response.data);
@@ -39,7 +38,7 @@ function Analytics() {
   const fetchRecentDonations = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/donations/recent"
+        "https://foodbridgesystem.onrender.com/api/donations/recent"
       );
 
       setRecentDonations(response.data);
