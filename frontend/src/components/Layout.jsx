@@ -6,12 +6,15 @@ function Layout({ children, setPage }) {
 
   return (
     <div
-      style={{
-        display: "flex",
-        minHeight: "100vh",
-        backgroundColor: "#F5F7FB",
-      }}
-    >
+  style={{
+    display:
+      window.innerWidth <= 768
+        ? "block"
+        : "flex",
+    minHeight: "100vh",
+    backgroundColor: "#F5F7FB",
+  }}
+>
       {/* Sidebar */}
       <Sidebar role={role} setPage={setPage} />
 

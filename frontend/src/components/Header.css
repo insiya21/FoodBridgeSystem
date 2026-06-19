@@ -28,3 +28,30 @@
   color: #6c63ff;
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .date {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}

@@ -394,36 +394,58 @@
 
 }
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-    .welcome-card{
-
-        flex-direction:column;
-
-        text-align:center;
-
-        gap:30px;
-
+    .dashboard-container {
+        width: 95%;
+        margin: 15px auto;
     }
 
-    .welcome-image img{
+    .welcome-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+        gap: 20px;
+    }
 
-        width:120px;
+    .welcome-text h1 {
+        font-size: 28px;
+    }
 
-        height:120px;
+    .welcome-text p {
+        font-size: 15px;
+    }
 
+    .welcome-image img {
+        width: 100px;
+        height: 100px;
     }
 
     .stats-grid {
-    display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    .bottom-grid {
+        grid-template-columns: 1fr;
+    }
 
-    gap: 20px;
+    .panel {
+        padding: 20px;
+    }
 
-    margin-bottom: 35px;
+    .donation-item {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 
-    width: 100%;
-}
+    .action-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
 
+    .donate-btn {
+        width: 100%;
+    }
 }
