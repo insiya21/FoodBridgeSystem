@@ -280,10 +280,8 @@ public class FoodDonationService {
         return foodDonationRepository.findByAssignedVolunteer(volunteerName);
     }
 
-    public List<FoodDonation> getDonationsByDonor(String donorName) {
-
-        return foodDonationRepository.findByDonorName(donorName);
-
+    public List<FoodDonation> getDonationsByDonor(String donorEmail) {
+        return foodDonationRepository.findByDonorEmail(donorEmail);
     }
 
     public List<FoodDonation> getClaimedDonations(String ngoName) {

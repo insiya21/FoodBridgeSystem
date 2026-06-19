@@ -13,7 +13,7 @@ public interface FoodDonationRepository extends JpaRepository<FoodDonation, Long
 
     List<FoodDonation> findByAssignedVolunteer(String assignedVolunteer);
 
-    List<FoodDonation> findByDonorName(String donorName);
+    List<FoodDonation> findByDonorEmail(String donorEmail);
 
     List<FoodDonation> findByClaimedBy(String claimedBy);
 

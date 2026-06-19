@@ -7,8 +7,7 @@ function MyDonations() {
   const [donations, setDonations] = useState([]);
 const [selectedDonation, setSelectedDonation] = useState(null);
 const [previewImage, setPreviewImage] = useState(null);
-  const donorName = localStorage.getItem("name");
-
+const donorEmail = localStorage.getItem("email");
   useEffect(() => {
     fetchMyDonations();
   }, []);
@@ -17,29 +16,12 @@ const [previewImage, setPreviewImage] = useState(null);
     try {
       // If you have /donor/{name} endpoint, use this:
       const response = await axios.get(
-        `https://foodbridgesystem.onrender.com/api/donations/donor/${encodeURIComponent(
-          donorName
-        )}`
-      );
+  `https://foodbridgesystem.onrender.com/api/donations/donor/${encodeURIComponent(
+    donorEmail
+  )}`
+);
 
       setDonations(response.data);
-
-      // If you DON'T have that endpoint yet,
-      // comment the above and use this instead:
-
-      /*
-      const response = await axios.get(
-        "https://foodbridgesystem.onrender.com/api/donations"
-      );
-
-      const myData = response.data.filter(
-        donation =>
-          donation.donorName?.toLowerCase() ===
-          donorName?.toLowerCase()
-      );
-
-      setDonations(myData);
-      */
 
     } catch (error) {
       console.error(error);

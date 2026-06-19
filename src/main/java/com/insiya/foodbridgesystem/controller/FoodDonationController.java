@@ -110,11 +110,11 @@ public class FoodDonationController {
 
     // ================= DONOR DONATIONS =================
 
-    @GetMapping("/donor/{donorName}")
+    @GetMapping("/donor/{donorEmail}")
     public List<FoodDonation> getDonationsByDonor(
-            @PathVariable String donorName) {
+            @PathVariable String donorEmail) {
 
-        return foodDonationService.getDonationsByDonor(donorName);
+        return foodDonationService.getDonationsByDonor(donorEmail);
     }
 
     @GetMapping("/recent")
