@@ -232,7 +232,7 @@ const donorEmail = localStorage.getItem("email");
                       cursor: "pointer",
                       marginRight: "8px",
                       fontWeight: "600",
-                      marginBottom: "10px",
+                      marginBottom: "5px",
                     }}
                   >
                     Edit
