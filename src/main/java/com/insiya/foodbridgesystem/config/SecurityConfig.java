@@ -61,8 +61,12 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-                List.of("http://localhost:5173",
-                        "http://localhost:5174")
+                List.of(
+                        "http://localhost:5173",
+                        "http://localhost:5174",
+                        "https://food-bridge-system-git-main-insiya.vercel.app",
+                        "https://food-bridge-system-ftn4vn6wn-insiya.vercel.app"
+                )
         );
 
         configuration.setAllowedMethods(
