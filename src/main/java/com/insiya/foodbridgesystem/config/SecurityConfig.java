@@ -64,6 +64,7 @@ public class SecurityConfig {
                 List.of(
                         "http://localhost:5173",
                         "http://localhost:5174",
+                        "http://localhost:5175",
                         "https://food-bridge-system-git-main-insiya.vercel.app",
                         "https://food-bridge-system-ftn4vn6wn-insiya.vercel.app"
                 )
