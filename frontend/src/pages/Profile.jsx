@@ -139,8 +139,12 @@ function Profile() {
           style={{
             marginTop: "40px",
             display: "flex",
-            justifyContent: "center",
-            gap: "20px",
+            flexDirection:
+              window.innerWidth <= 768
+                ? "column"
+                : "row",
+            alignItems: "center",
+            gap: "15px",
           }}
         >
          <button
@@ -199,16 +203,17 @@ function Profile() {
 function InfoRow({ label, value }) {
   return (
     <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "180px 1fr",
-        alignItems: "center",
-        padding: "16px 24px",
-        background: "#F8FAFC",
-        borderRadius: "10px",
-        border: "1px solid #E5E7EB",
-      }}
-    >
+  style={{
+    display: "flex",
+    flexDirection: window.innerWidth <= 768 ? "column" : "row",
+    alignItems: window.innerWidth <= 768 ? "flex-start" : "center",
+    gap: "10px",
+    padding: "16px 24px",
+    background: "#F8FAFC",
+    borderRadius: "10px",
+    border: "1px solid #E5E7EB",
+  }}
+>
       {/* Label */}
       <div
         style={{
@@ -227,6 +232,8 @@ function InfoRow({ label, value }) {
           fontSize: "17px",
           fontWeight: "500",
           textAlign: "left",
+          width: "100%",
+          wordBreak: "break-word",
         }}
       >
         {value}

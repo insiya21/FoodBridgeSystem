@@ -279,15 +279,16 @@ function ManageUsers() {
                   deleteUser(user.id)
                 }
                 style={{
-                  background: "#EF4444",
-                  color: "white",
-                  border: "none",
-                  borderRadius: "10px",
-                  padding: "8px 14px",
-                  cursor: "pointer",
-                  fontWeight: "600",
-                  fontSize: "14px",
-                }}
+  background: "#EF4444",
+  color: "white",
+  border: "none",
+  borderRadius: "10px",
+  minWidth: "70px",
+  height: "30px",
+  cursor: "pointer",
+  fontWeight: "600",
+  fontSize: "14px",
+}}
               >
                 🗑 Delete
               </button>
