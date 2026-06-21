@@ -160,6 +160,7 @@ color:
               window.innerWidth <= 768
                 ? "column"
                 : "row",
+                justifyContent: "center", 
             alignItems: "center",
             gap: "15px",
           }}
