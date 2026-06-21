@@ -1,5 +1,5 @@
 .sidebar {
-  width: 230px;
+  width: 270px;
   min-height: 100vh;
 
   background: #111827;
@@ -163,6 +163,10 @@
 
 @media (max-width: 768px) {
 
+  .sidebar {
+    width: 230px;
+  }
+
   .logo {
     gap: 10px;
   }
@@ -179,5 +183,4 @@
   .logo-text p {
     font-size: 11px;
   }
-
 }
