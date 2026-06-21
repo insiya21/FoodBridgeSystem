@@ -98,14 +98,31 @@ function Profile() {
     value={
       <span
         style={{
-          background: "#EDE9FE",
-          color: "#6C63FF",
+          background:
+  user.role === "ADMIN"
+    ? "#FEE2E2"
+    : user.role === "DONOR"
+    ? "#DCFCE7"
+    : user.role === "NGO"
+    ? "#DBEAFE"
+    : "#EDE9FE",
+
+color:
+  user.role === "ADMIN"
+    ? "#DC2626"
+    : user.role === "DONOR"
+    ? "#16A34A"
+    : user.role === "NGO"
+    ? "#2563EB"
+    : "#7C3AED",
           padding: "6px 14px",
           borderRadius: "20px",
           fontWeight: "600",
         }}
       >
-       {user.role === "DONOR"
+      {user.role === "ADMIN"
+  ? "👑 ADMIN"
+  : user.role === "DONOR"
   ? "🍱 DONOR"
   : user.role === "NGO"
   ? "🏢 NGO"
